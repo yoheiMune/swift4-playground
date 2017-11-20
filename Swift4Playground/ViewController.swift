@@ -21,8 +21,11 @@ class ViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+}
+
+//MARK:- TableViewDatasouce
+extension ViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return samples.count
@@ -39,11 +42,13 @@ class ViewController: UITableViewController {
         
         return cell!
     }
+}
+
+//MARK:- TableViewDelegate
+extension ViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = samples[indexPath.row].1
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
-
