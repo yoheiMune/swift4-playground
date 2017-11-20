@@ -3,7 +3,7 @@
 //  Swift4Playground
 //
 //  Created by Munesada Yohei on 2017/11/16.
-//  Copyright © 2017年 Munesada Yohei. All rights reserved.
+//  Copyright © 2017 Munesada Yohei. All rights reserved.
 //
 
 import UIKit
