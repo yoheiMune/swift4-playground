@@ -6,6 +6,7 @@ target 'Swift4Playground' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.5'
+  pod 'Koloda', '~> 4.3.1'
 
   # Pods for Swift4Playground
 
