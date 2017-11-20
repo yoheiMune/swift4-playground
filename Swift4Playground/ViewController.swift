@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    
+    let samples = [
+        ("001 TinderUI Sample", TinderUIViewController())
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Swift4 Playground"
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return samples.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "swift4-playground-list")
+        if cell == nil {
+            cell = UITableViewCell()
+        }
+        
+        cell?.textLabel?.text = samples[indexPath.row].0
+        
+        return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = samples[indexPath.row].1
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
