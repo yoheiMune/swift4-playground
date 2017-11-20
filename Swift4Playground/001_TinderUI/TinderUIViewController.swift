@@ -6,6 +6,8 @@
 //  Copyright © 2017 Munesada Yohei. All rights reserved.
 //
 
+// Ref: https://github.com/Yalantis/Koloda
+
 import UIKit
 import Koloda
 
@@ -22,11 +24,9 @@ class TinderUIViewController: UIViewController {
         
         kolodaView.dataSource = self
         kolodaView.delegate = self
-        
         kolodaView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         kolodaView.center = self.view.center
         self.view.addSubview(kolodaView)
-        
     }
     
 }
@@ -51,6 +51,7 @@ extension TinderUIViewController: KolodaViewDataSource {
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 0.2
         view.layer.shadowOffset = CGSize(width: 0, height: 1.5)
+        
         // Add a label.
         let label = UILabel()
         label.text = items[index]
