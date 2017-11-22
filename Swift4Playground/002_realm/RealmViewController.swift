@@ -76,21 +76,17 @@ class RealmViewController: UIViewController {
             // Set the new schema version.
             // This must be greater than the previous.
             // If you've never set a schema version before, the vesion is 0.
-            schemaVersion: 2,
+            schemaVersion: 3,
             
             // Set the block which will be called automatically when opening a Realm
             // with a schema version lower than the one set above.
             migrationBlock: {migration, oldSchemaVersion in
                 // Do anything for data migration.
-                if (oldSchemaVersion < 2) {
+                if (oldSchemaVersion < 3) {
                     // Do data paching.
-//                    let realm = try! Realm()
-//                    let objects = realm.objects(Dog.self).filter("createdAt = nil")
-//                    for obj in objects {
-//                        try! realm.write {
-//                            obj.createdAt = Date()
-//                        }
-//                    }
+                    migration.enumerateObjects(ofType: Dog.className(), { oldObject, newObject in
+                        newObject!["createdAt"] = Date()
+                    })
                 }
             }
         )
