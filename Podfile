@@ -6,6 +6,7 @@ target 'Swift4Playground' do
   use_frameworks!
 
   pod 'Koloda', '~> 4.3.1'
+  pod 'RealmSwift'
 
   # Pods for Swift4Playground
 
