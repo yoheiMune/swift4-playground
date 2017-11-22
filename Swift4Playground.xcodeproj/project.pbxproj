@@ -15,6 +15,7 @@
 		1E484A691FBD18A4009D32DD /* Swift4PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E484A681FBD18A4009D32DD /* Swift4PlaygroundTests.swift */; };
 		1E484A741FBD18A4009D32DD /* Swift4PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E484A731FBD18A4009D32DD /* Swift4PlaygroundUITests.swift */; };
 		1E5324D71FC25A5E00D2631B /* TinderUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5324D61FC25A5E00D2631B /* TinderUIViewController.swift */; };
+		1EAA32CF1FC4F8DD003DB76B /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA32CE1FC4F8DD003DB76B /* RealmViewController.swift */; };
 		635438CCABD458EF2134A279 /* Pods_Swift4Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FE798A087A27A2A7B706EC /* Pods_Swift4Playground.framework */; };
 		E7C09BEA9936AF53F9F4D2C3 /* Pods_Swift4PlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00674BA030A7818C4BABDC2 /* Pods_Swift4PlaygroundUITests.framework */; };
 		F324A5CEE58CFBEA085F53AC /* Pods_Swift4PlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B126734A06A91D6FD4FCD785 /* Pods_Swift4PlaygroundTests.framework */; };
@@ -52,6 +53,7 @@
 		1E484A731FBD18A4009D32DD /* Swift4PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift4PlaygroundUITests.swift; sourceTree = "<group>"; };
 		1E484A751FBD18A4009D32DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E5324D61FC25A5E00D2631B /* TinderUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUIViewController.swift; sourceTree = "<group>"; };
+		1EAA32CE1FC4F8DD003DB76B /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 		221F8F7207A63012DD98D44B /* Pods-Swift4PlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift4PlaygroundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift4PlaygroundTests/Pods-Swift4PlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2986BEDA6668F1244AADFEE4 /* Pods-Swift4Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift4Playground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift4Playground/Pods-Swift4Playground.debug.xcconfig"; sourceTree = "<group>"; };
 		3E0CBCE04FB932D1E4C94509 /* Pods-Swift4Playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift4Playground.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift4Playground/Pods-Swift4Playground.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				1E5324D51FC25A4B00D2631B /* 001_TinderUI */,
+				1EAA32CD1FC4F8BB003DB76B /* 002_realm */,
 				1E484A531FBD18A3009D32DD /* AppDelegate.swift */,
 				1E484A551FBD18A3009D32DD /* ViewController.swift */,
 				1E484A571FBD18A3009D32DD /* Main.storyboard */,
@@ -151,6 +154,14 @@
 				1E5324D61FC25A5E00D2631B /* TinderUIViewController.swift */,
 			);
 			path = 001_TinderUI;
+			sourceTree = "<group>";
+		};
+		1EAA32CD1FC4F8BB003DB76B /* 002_realm */ = {
+			isa = PBXGroup;
+			children = (
+				1EAA32CE1FC4F8DD003DB76B /* RealmViewController.swift */,
+			);
+			path = 002_realm;
 			sourceTree = "<group>";
 		};
 		8801AC597051AF31AF031ECC /* Frameworks */ = {
@@ -471,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAA32CF1FC4F8DD003DB76B /* RealmViewController.swift in Sources */,
 				1E484A561FBD18A3009D32DD /* ViewController.swift in Sources */,
 				1E484A541FBD18A3009D32DD /* AppDelegate.swift in Sources */,
 				1E5324D71FC25A5E00D2631B /* TinderUIViewController.swift in Sources */,

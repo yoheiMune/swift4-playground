@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let samples = [
-        ("001 TinderUI Sample", TinderUIViewController())
+    let samples:[(String, UIViewController)] = [
+        ("001 TinderUI Sample", TinderUIViewController()),
+        ("002 Realm Sample", RealmViewController()),
     ]
 
     override func viewDidLoad() {
